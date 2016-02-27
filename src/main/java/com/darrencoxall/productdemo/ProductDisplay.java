@@ -3,6 +3,7 @@ package com.darrencoxall.productdemo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.text.NumberFormat;
+
 import java.util.Currency;
 
 public class ProductDisplay {

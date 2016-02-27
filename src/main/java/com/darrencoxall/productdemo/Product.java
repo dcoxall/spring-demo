@@ -2,8 +2,12 @@ package com.darrencoxall.productdemo;
 
 import java.math.BigDecimal;
 
+import javax.persistence.*;
+
+@Entity
 public class Product {
 
+    @Id
     private Long id;
     private String name;
     private String description;
@@ -59,6 +63,7 @@ public class Product {
         this.currencyCode = currencyCode;
     }
 
+    @Transient
     public ProductDisplay getDisplay() {
         ProductDisplay display = new ProductDisplay();
         display.setProduct(this);

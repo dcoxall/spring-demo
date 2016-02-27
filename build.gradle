@@ -28,5 +28,17 @@ repositories {
 }
 
 dependencies {
+  // Production ready stuff (whatever that means)
+  compile("org.springframework.boot:spring-boot-starter-actuator")
 
+  // Jersey (JAX-RS) for RESTful web services
+  compile("org.springframework.boot:spring-boot-starter-jersey")
+
+  // Logback for logging
+  compile("org.springframework.boot:spring-boot-starter-logging")
+
+  // Use the Jetty Server
+  compile("org.springframework.boot:spring-boot-starter-jetty")
+
+  testCompile("org.springframework.boot:spring-boot-starter-test")
 }
